@@ -1,0 +1,1 @@
+# YARD JSON API plugin
