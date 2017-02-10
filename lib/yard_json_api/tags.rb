@@ -1,7 +1,8 @@
 module YardJsonApi
   module Tags
     TAGS = [
-      ['Declaration of RESTful API type', :restful_api],
+      ['Declaration of RESTful API type', :resource],
+
       ['URL',                             :url],
       ['HTTP-Action for the Resource',    :action],
 

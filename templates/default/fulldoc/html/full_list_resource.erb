@@ -1,0 +1,7 @@
+<% n = 1 %>
+<% @items.each do |resource| %>
+  <li class="r<%= n %>">
+    <span class="object_link"><%= linkify resource, h(resource.name(true)) %></span>
+  </li>
+  <% n = n == 2 ? 1 : 2 %>
+<% end %>
