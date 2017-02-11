@@ -2,6 +2,8 @@
 <% @items.each do |resource| %>
   <li class="r<%= n %>">
     <span class="object_link"><%= linkify resource, h(resource.name(true)) %></span>
+    <span><%= resource.tag(:error)&.name %></span>
+    <span><%= resource.tag(:error)&.text %></span>
   </li>
   <% n = n == 2 ? 1 : 2 %>
 <% end %>
