@@ -4,3 +4,7 @@ def generate_resource_list
   @list_type = 'resource'
   generate_list_contents
 end
+
+def resource_name(resource)
+  resource.name(true).gsub(/Controller$/, '')
+end
