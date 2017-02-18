@@ -1,5 +1,6 @@
 def menu_lists
-  super + [ { type: 'resource', title: 'Resources', search_title: 'Resource List' } ]
+  [{ type: 'class', title: 'Resources', search_title: 'Resource List' },
+   { type: 'file',  title: 'Files',  search_title: 'File List' }]
 end
 
 def resource_name(resource)
