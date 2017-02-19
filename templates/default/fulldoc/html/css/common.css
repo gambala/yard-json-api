@@ -27,9 +27,21 @@
   border-bottom: 0;
   border-right: 0;
   padding: 8px;
+  vertical-align: top;
 }
 
 .tags .errors table th {
   font-weight: bold;
   text-align: left;
+}
+
+.tags .errors table td.code {
+  padding: 0;
+}
+
+.tags .errors table td.code .example.code {
+  border-radius: 0;
+  border: none;
+  margin: 0;
+  padding: 8px;
 }

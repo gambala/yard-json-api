@@ -14,7 +14,9 @@
           <tr>
             <td><%= tag.type %></td>
             <td><%= tag.name %></td>
-            <td><%= htmlify(tag.text) %></td>
+            <td class="code">
+              <pre class="example code"><code><%= html_syntax_highlight(tag.text) %></code></pre>
+            </td>
           </tr>
         <% end %>
       </tbody>
