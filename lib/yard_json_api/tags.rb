@@ -20,7 +20,7 @@ module YardJsonApi
       ['Example Response Description',    :example_response_description],
       ['Response Fields',                 :response_field, :with_types_and_name],
       ['Response Type',                   :response, :with_types]
-    ]
+    ].freeze
 
     def self.define_tags
       TAGS.each do |tag|
