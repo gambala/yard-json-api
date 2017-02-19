@@ -1,5 +1,5 @@
 def init
-  sections :header, T('docstring'), :method_details_list, [T('method_details')]
+  sections :header, T('docstring'), :children, :method_details_list, [T('method_details')]
 end
 
 def resource_name(resource)
