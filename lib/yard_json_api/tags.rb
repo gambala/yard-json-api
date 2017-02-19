@@ -8,7 +8,6 @@ module YardJsonApi
       ['HTTP-Action for the Resource',    :action],
 
       ['Resource Object Property',        :property, :with_types_and_name],
-      ['Resource Object Example',         :example],
 
       ['Required Arguments',              :required, :with_types_and_name],
       ['Optional Arguments',              :optional, :with_types_and_name],
