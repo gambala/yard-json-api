@@ -36,12 +36,40 @@
 }
 
 .tags .errors table td.code {
+  background: #f7f7f9;
   padding: 0;
 }
 
 .tags .errors table td.code .example.code {
   border-radius: 0;
   border: none;
+  line-height: 1.5145em;
   margin: 0;
+  min-height: 1.5145em;
   padding: 8px;
+}
+
+tt,
+.tags ul .name {
+  font-size: 0.9em;
+}
+
+code,
+.docstring p > code,
+.docstring p > tt,
+.tags p > code,
+.tags p > tt {
+  background: #f7f7f9;
+  border-radius: 4px;
+  border: 1px solid #e1e1e8;
+  color: #d14;
+  font-size: 0.9em;
+  padding: 2px 4px;
+}
+
+pre code {
+  background: none;
+  border: none;
+  color: initial;
+  padding: 0;
 }
