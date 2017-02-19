@@ -1,0 +1,11 @@
+<% if object.has_tag?(:overload) %>
+  <div class="overload">
+    <% object.tags(:overload).each do |overload| %>
+      <% next if overload.docstring.blank? %>
+      <div class="overload_item">
+        <hr>
+        <%= yieldall :object => overload %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
