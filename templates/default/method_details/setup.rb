@@ -1,11 +1,11 @@
 def init
-  sections :header, [:request, T('docstring')]
+  sections :header, [:endpoint, T('docstring')]
 end
 
-def request_name(object)
-  request = object.tag(:request)
-  return nil unless request
-  return request.text unless request.text.empty?
+def endpoint_name(object)
+  endpoint = object.tag(:endpoint)
+  return nil unless endpoint
+  return endpoint.text unless endpoint.text.empty?
   "#{http_method(object)} #{uri(object)}"
 end
 

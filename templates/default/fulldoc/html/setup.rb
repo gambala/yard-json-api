@@ -1,6 +1,6 @@
 def generate_class_list
   @items = Registry.all(:class).select do |obj|
-    !obj.meths.select { |meth| meth.has_tag?(:request) }.empty?
+    !obj.meths.select { |meth| meth.has_tag?(:endpoint) }.empty?
   end
   @list_title = 'Resource List'
   @list_type = 'class'
