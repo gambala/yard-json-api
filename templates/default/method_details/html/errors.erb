@@ -1,0 +1,20 @@
+<% if object.tags(:error) %>
+  <table>
+    <thead>
+      <tr>
+        <th>HTTP-code</th>
+        <th>Description</th>
+        <th>Data</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% object.tags(:error).each do |error| %>
+        <tr>
+          <td><%= error.name %></td>
+          <td><%= error.text %></td>
+          <td></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>

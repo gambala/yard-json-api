@@ -1,5 +1,5 @@
 def init
-  sections :header, [:request, T('docstring')]
+  sections :header, [:request, T('docstring'), :errors]
 end
 
 def request_name(object)
