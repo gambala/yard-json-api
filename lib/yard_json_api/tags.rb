@@ -6,9 +6,7 @@ module YardJsonApi
     ].freeze
 
     def self.define_tags
-      TAGS.each do |tag|
-        YARD::Tags::Library.define_tag(*tag)
-      end
+      TAGS.each { |tag| YARD::Tags::Library.define_tag(*tag) }
       YARD::Tags::Library.visible_tags.place(:error).after(:example)
     end
   end
