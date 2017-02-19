@@ -1,0 +1,22 @@
+<% if object.has_tag?(:error) %>
+  <div class="errors">
+    <p class="tag_title">Errors:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>HTTP-code</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% object.tags(:error).each do |tag| %>
+          <tr>
+            <td><%= tag.name %></td>
+            <td><%= html_syntax_highlight(tag.text) %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+<% end %>
+

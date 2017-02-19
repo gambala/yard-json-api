@@ -1,7 +1,7 @@
 module YardJsonApi
   module Tags
     TAGS = [
-      ['HTTP-Error with description',     :error, :with_title_and_text],
+      ['Errors',                          :error, :with_title_and_text],
       ['Request',                         :request],
 
       ['URL',                             :url],
@@ -26,6 +26,7 @@ module YardJsonApi
       TAGS.each do |tag|
         YARD::Tags::Library.define_tag(*tag)
       end
+      YARD::Tags::Library.visible_tags.place(:error).after(:example)
     end
   end
 end
