@@ -6,17 +6,18 @@
         <tr>
           <th>HTTP-code</th>
           <th>Description</th>
+          <th>JSON</th>
         </tr>
       </thead>
       <tbody>
         <% object.tags(:error).each do |tag| %>
           <tr>
+            <td><%= tag.type %></td>
             <td><%= tag.name %></td>
-            <td><%= html_syntax_highlight(tag.text) %></td>
+            <td><%= htmlify(tag.text) %></td>
           </tr>
         <% end %>
       </tbody>
     </table>
   </div>
 <% end %>
-

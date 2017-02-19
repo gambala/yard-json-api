@@ -1,7 +1,7 @@
 module YardJsonApi
   module Tags
     TAGS = [
-      ['Errors',                          :error, :with_title_and_text],
+      ['Errors',                          :error, :with_types_and_title],
       ['Request',                         :request],
 
       ['URL',                             :url],
