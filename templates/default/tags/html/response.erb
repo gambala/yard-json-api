@@ -1,5 +1,5 @@
-<% if object.has_tag?(:error) %>
-  <div class="errors">
+<% if object.has_tag?(:response) %>
+  <div class="responses">
     <p class="tag_title">Errors:</p>
     <table>
       <thead>
@@ -10,7 +10,7 @@
         </tr>
       </thead>
       <tbody>
-        <% object.tags(:error).each do |tag| %>
+        <% object.tags(:response).each do |tag| %>
           <tr>
             <td><%= tag.type %></td>
             <td><%= tag.name %></td>

@@ -3,11 +3,11 @@
   font-size: small;
 }
 
-.tags .errors .tag_title {
+.tags .responses .tag_title {
   margin-bottom: 10px;
 }
 
-.tags .errors table {
+.tags .responses table {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border: 1px solid #dddddd;
@@ -21,8 +21,8 @@
   width: 100%;
 }
 
-.tags .errors table th,
-.tags .errors table td {
+.tags .responses table th,
+.tags .responses table td {
   border: 1px solid #dddddd;
   border-bottom: 0;
   border-right: 0;
@@ -30,17 +30,17 @@
   vertical-align: top;
 }
 
-.tags .errors table th {
+.tags .responses table th {
   font-weight: bold;
   text-align: left;
 }
 
-.tags .errors table td.code {
+.tags .responses table td.code {
   background: #f7f7f9;
   padding: 0;
 }
 
-.tags .errors table td.code .example.code {
+.tags .responses table td.code .example.code {
   border-radius: 0;
   border: none;
   line-height: 1.5145em;
