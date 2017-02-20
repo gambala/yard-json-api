@@ -8,5 +8,7 @@ def generate_class_list
 end
 
 def resource_name(resource)
-  resource.name(true).gsub(/Controller$/, '')
+  resource.title
+          .gsub(/Controller$/, '')
+          .gsub(/^Api::V\d+::/, '')
 end
