@@ -1,4 +1,4 @@
-module YardJsonApi
+module YardRest
   module Templates
     def self.register_template_path
       path = File.dirname(__FILE__) + '/../../templates'

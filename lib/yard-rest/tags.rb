@@ -1,4 +1,4 @@
-module YardJsonApi
+module YardRest
   module Tags
     TAGS = [
       ['Endpoint',  :endpoint],
