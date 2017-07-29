@@ -1,1 +1,3 @@
-# YARD JSON API plugin
+# YARD RESTful plugin
+
+For API documentation generating.
