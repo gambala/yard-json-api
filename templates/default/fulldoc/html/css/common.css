@@ -49,6 +49,11 @@
   padding: 8px;
 }
 
+.tags .responses table p,
+.tags .responses table ul {
+  margin-top: 0;
+}
+
 tt,
 .tags ul .name {
   font-size: 0.9em;

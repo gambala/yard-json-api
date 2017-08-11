@@ -1,0 +1,23 @@
+<% if object.has_tag?(:usecase) %>
+  <div class="responses">
+    <p class="tag_title">Use cases:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Zeplin layout</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% object.tags(:usecase).each do |tag| %>
+          <tr>
+            <td><%= html_markup_markdown(tag.type) %></td>
+            <td><%= html_markup_markdown(tag.text) %></td>
+            <td><%= html_markup_markdown(tag.name) %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+<% end %>
