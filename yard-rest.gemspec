@@ -15,5 +15,5 @@ Gem::Specification.new do |s|
   s.date = Time.now.strftime('%Y-%m-%d')
   s.require_paths = ['lib']
   s.files = Dir.glob('lib/**/*')
-  s.add_runtime_dependency 'yard', '~> 0.8'
+  s.add_runtime_dependency 'yard', '~> 0.9.11'
 end
